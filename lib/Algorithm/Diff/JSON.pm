@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 use Algorithm::Diff qw(diff);
-use JSON qw(encode_json);
+use Cpanel::JSON::XS qw(encode_json);
 
 use Sub::Exporter -setup  => { exports => [ 'json_diff' ] };
 

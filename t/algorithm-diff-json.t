@@ -2,7 +2,7 @@ use strict;
 use warnings;
 
 use Algorithm::Diff::JSON 'json_diff' => { -as => 'jsondiff' };
-use JSON qw(decode_json);
+use Cpanel::JSON::XS qw(decode_json);
 
 use Test::Differences;
 use Test::More;
