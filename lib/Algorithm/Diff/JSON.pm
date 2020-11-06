@@ -61,7 +61,8 @@ will generate this JSON:
 
 =head1 FUNCTIONS
 
-There is only one function.
+There is only one function, which is a simple wrapper around L<Algorithm::Diff>'s
+C<diff> function:
 
 =head2 json_diff
 
