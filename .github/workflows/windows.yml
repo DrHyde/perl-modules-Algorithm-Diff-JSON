@@ -1,4 +1,5 @@
 # Auto-generated file, see workflow-templates/windows.yml
+# To rebuild, see rebuild-workflows in https://github.com/DrHyde/meta-perlmodules
 
 name: Windows
 on:
@@ -8,6 +9,7 @@ on:
       - '.github/workflows/run-windows'
 jobs:
   build:
+    if: github.actor != 'dependabot[bot]'
     runs-on: windows-latest
     strategy:
       fail-fast: false
