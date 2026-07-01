@@ -6,6 +6,9 @@ on:
     paths:
       - '.github/workflows/macos.yml'
       - '.github/workflows/run-macos'
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 name: MacOS
 jobs:
   build:

@@ -6,6 +6,9 @@ on:
     paths:
       - '.github/workflows/coveralls.yml'
       - '.github/workflows/run-coveralls'
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 name: Generate Coveralls report
 jobs:
   build:

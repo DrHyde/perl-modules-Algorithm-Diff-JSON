@@ -6,6 +6,9 @@ on:
     paths:
       - '.github/workflows/install-various-OSes.yml'
       - '.github/workflows/run-install-various-OSes'
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 name: Install on various OSes
 jobs:
   build:
