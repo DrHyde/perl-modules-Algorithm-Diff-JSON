@@ -3,8 +3,10 @@ use Config;
 
 WriteMakefile(
   NAME         => 'Algorithm::Diff::JSON',
-  META_MERGE => {
+  META_ADD => {
     license => 'open_source',
+},
+META_MERGE => {
     resources => {
       repository => 'https://github.com/DrHyde/perl-modules-Algorithm-Diff-JSON',
       bugtracker => 'https://github.com/DrHyde/perl-modules-Algorithm-Diff-JSON/issues'
